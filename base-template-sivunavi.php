@@ -1,12 +1,12 @@
 <?php
 
-use Janne\Setup;
+use Janne\Config;
 use Janne\Wrapper;
 
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="no-js" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
     <!--[if lt IE 9]>
@@ -16,18 +16,13 @@ use Janne\Wrapper;
     <![endif]-->
     <?php
       do_action('get_header');
-      get_template_part('templates/header');
+      get_template_part('templates/header-sivunavi');
     ?>
-    <div class="wrap container" role="document">
+    <div class="wrap col-sm-9 col-sm-offset-3" role="document">
       <div class="content row">
         <main class="main" role="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php

@@ -1,0 +1,42 @@
+.page-header, .single .hentry header {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    text-align: center;
+}
+
+
+
+// Sivunavi template header
+
+.page-template-template-sivunavi .header-wrap {
+    z-index: 1000;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+.page-template-template-sivunavi.toggled .header-wrap {
+    width: 100%;
+}
+.page-template-template-sivunavi .navbar-header {
+    float: none;
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+    
+}
+@media (min-width: $screen-md-min) {
+  .page-header, .single .hentry header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  
+}

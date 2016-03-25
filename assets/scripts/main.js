@@ -19,6 +19,15 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        
+        // Add Bootstrap styling to tables
+        //$('.main table').addClass('table');
+        
+        $(".navbar-toggle").click(function(e) {
+            e.preventDefault();
+            $("body").toggleClass("toggled");
+        });
+        
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

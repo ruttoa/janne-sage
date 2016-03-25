@@ -1,0 +1,30 @@
+.archive .main .hentry, .blog .main .hentry {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.archive .main .entry-summary, .blog .main .entry-summary {
+  display: none;
+}
+.archive .byline, .blog .byline, .single .byline {
+    display: none;
+}
+.nav-links {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+@media (min-width: $screen-sm-min) {
+    
+}
+@media (min-width: $screen-md-min) {
+  .archive .main .hentry, .blog .main .hentry {
+    margin-bottom: 2.5rem;
+  }
+  .nav-links .nav-next, .nav-links .nav-previous {
+    display: inline-block;
+    text-align: center;
+    padding: .2rem .75rem;
+  }
+}
+@media (min-width: $screen-lg-min) {
+
+}

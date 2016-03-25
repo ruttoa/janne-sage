@@ -2,110 +2,124 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sv_SE\n"
 
 #: 404.php:4
 msgid "Sorry, but the page you were trying to view does not exist."
-msgstr ""
+msgstr "Tyvärr kunde vi inte hitta sidan du sökte."
 
 #: base.php:12
 msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
 msgstr ""
+"Du använder en <strong>gammal</strong> webbläsare. <a href=“http://"
+"browsehappy.com/“>Vänligen uppdatera den</a> för att förbättra upplevelsen "
+"av denna sajt och för din egen säkerhets skull."
 
 #: functions.php:25
 msgid "Error locating %s for inclusion"
-msgstr ""
+msgstr "Kunde inte hitta %s för inkludering"
 
 #: index.php:5
 msgid "Sorry, no results were found."
-msgstr ""
+msgstr "Inga resultat hittades tyvärr."
 
 #: lib/extras.php:31
 msgid "Continued"
-msgstr ""
+msgstr "Läs mer…"
 
 #: lib/init.php:22
 msgid "Primary Navigation"
-msgstr ""
+msgstr "Huvudmenyn"
 
 #: lib/init.php:49
 msgid "Primary"
-msgstr ""
+msgstr "Huvudsaklig"
 
 #: lib/init.php:58
 msgid "Footer"
-msgstr ""
+msgstr "Sidfot"
 
 #: lib/titles.php:13
 msgid "Latest Posts"
-msgstr ""
+msgstr "Senaste inläggen"
 
 #: lib/titles.php:18
 msgid "Search Results for %s"
-msgstr ""
+msgstr "Sökresultat för %s"
 
 #: lib/titles.php:20
 msgid "Not Found"
-msgstr ""
+msgstr "Inget funnet"
 
 #: templates/comments.php:9
 msgctxt "comments title"
 msgid "One response to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s responses to &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "En kommentar om: &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer om &ldquo;%2$s&rdquo;"
 
 #: templates/comments.php:19
 msgid "&larr; Older comments"
-msgstr ""
+msgstr "&larr;  Äldre kommentarer"
 
 #: templates/comments.php:22
 msgid "Newer comments &rarr;"
-msgstr ""
+msgstr "Nyare kommentarer &rarr;"
 
 #: templates/comments.php:31
 msgid "Comments are closed."
-msgstr ""
+msgstr "Kommentarsfunktion är avstängd."
 
 #: templates/content-page.php:2 templates/content-single.php:11
 msgid "Pages:"
-msgstr ""
+msgstr "Sidor:"
 
 #: templates/entry-meta.php:2
 msgid "By"
-msgstr ""
+msgstr "Av"
 
 #: templates/searchform.php:2
 msgid "Search for:"
-msgstr ""
+msgstr "Sök efter:"
 
 #: templates/searchform.php:4 templates/searchform.php:6
 msgid "Search"
-msgstr ""
+msgstr "Sök"
 
 #. Theme Name of the plugin/theme
 msgid "Sage Starter Theme"
-msgstr ""
+msgstr "Sage starttema"
 
 #. Theme URI of the plugin/theme
 msgid "https://roots.io/sage/"
-msgstr ""
+msgstr "https://roots.io/sage/"
 
 #. Description of the plugin/theme
 msgid ""
 "Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
 "\">Contribute on GitHub</a>"
 msgstr ""
+"Sage är ett starttema för WordPress. <a href=\"https://github.com/roots/sage"
+"\">Bidra via GitHub</a>"
 
 #. Author of the plugin/theme
 msgid "Roots"
-msgstr ""
+msgstr "Roots"
 
 #. Author URI of the plugin/theme
 msgid "https://roots.io/"
-msgstr ""
+msgstr "https://roots.io/"
 
 #. Template Name of the plugin/theme
 msgid "Custom Template"
-msgstr ""
+msgstr "Anpassad mall"

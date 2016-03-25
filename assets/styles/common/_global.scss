@@ -1,1 +1,29 @@
+html {
+    font-size: 16px;
+}
+.main, .sidebar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
+@media (min-width: $screen-sm-min) {
+    body {
+      font-size: 1.1rem;
+    }
+}
+@media (min-width: $screen-md-min) {
+  body {
+    font-size: 1.2rem;
+  }
+  .main, .sidebar {
+    margin-left: 16.66666667%;
+    float: left;
+    width: 66.66666667%;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  body {
+    font-size: 1.3rem;
+  }
+}
