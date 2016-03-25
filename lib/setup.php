@@ -57,7 +57,7 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Primary', 'janne'),
     'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s col-sm-4">',
+    'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
@@ -77,7 +77,7 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 /**
  * Determine which pages should NOT display the sidebar
  */
-function display_sidebar() {
+/*function display_sidebar() {
   static $display;
 
   isset($display) || $display = !in_array(true, [
@@ -89,7 +89,7 @@ function display_sidebar() {
   ]);
 
   return apply_filters('janne/display_sidebar', $display);
-}
+}*/
 
 /**
  * Theme assets
