@@ -18,6 +18,8 @@ function body_class($classes) {
   // Add class if sidebar is active
   if (is_page_template( 'template-sidebar.php' )) {
     $classes[] = 'sidebar-primary';
+  } elseif (is_page_template( 'template-full-width.php' )) {
+    $classes[] = 'full-width';
   }
 
   return $classes;
