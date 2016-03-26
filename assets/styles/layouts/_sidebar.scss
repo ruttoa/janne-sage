@@ -52,3 +52,19 @@
     padding-top: 0;
 }
 
+.widget_categories ul .children {
+    padding: 8px 0 0 8px;
+}
+.widget_categories ul .children > li:last-child {
+    padding-bottom: 0;
+}
+
+
+@media (min-width: $screen-md-min) {
+  .sidebar{
+    float: left;
+    width: 33.33333332%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
