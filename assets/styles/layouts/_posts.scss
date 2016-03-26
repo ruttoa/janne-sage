@@ -1,3 +1,6 @@
+body:not(.bootstrap) .entry-content {
+  font-family: $font-family-serif;
+}
 .archive .main .hentry, .blog .main .hentry {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -12,6 +15,13 @@
   margin-top: 3.5rem;
   text-align: center;
 }
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: $font-family-sans-serif;
+}
+
+
 @media (min-width: $screen-sm-min) {
     
 }
@@ -23,6 +33,10 @@
     display: inline-block;
     text-align: center;
     padding: .2rem .75rem;
+  }
+  .page-template-default blockquote.alignleft{
+    margin-left: -16.66666667%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: $screen-lg-min) {
