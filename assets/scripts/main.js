@@ -21,16 +21,63 @@
         // JavaScript to be fired on all pages
         
         // Add Bootstrap styling to tables
-        //$('.main table').addClass('table');
+        $('.main table').addClass('table');
+        
+        // Add Bootstrap functionality to tooltip and popovers
+        $('.bs-component [data-toggle="popover"]').popover();
+        $('.bs-component [data-toggle="tooltip"]').tooltip();
+        
+        // Prevent default in links with no href
+        $("a[href='#']").click(function(e) {
+          e.preventDefault();
+        });
+        
         
         $(".navbar-toggle").click(function(e) {
             e.preventDefault();
             $("body").toggleClass("toggled");
         });
         
+        // Add special class to full-size content images of large widths.
+        function belowEntryMetaClass( param ) {
+          
+          $( '.entry-content' ).find( param ).each( function() {
+            var element              = $( this ),
+              caption              = element.closest( 'figure' ),
+              newImg;
+
+            // Check if full-size images and captions are larger than or equal to 1000px.
+            if ( 'img.size-full' === param ) {
+
+              // Create an image to find native image width of resized images (i.e. max-width: 100%).
+              newImg = new Image();
+              newImg.src = element.attr( 'src' );
+
+              $( newImg ).load( function() {
+                if ( newImg.width >= 1000  ) {
+                  element.addClass( 'img-overflow' );
+
+                  if ( caption.hasClass( 'wp-caption' ) ) {
+                    caption.addClass( 'img-overflow' );
+                    caption.removeAttr( 'style' );
+                  }
+                }
+              } );
+            } else {
+              element.addClass( 'img-overflow' );
+            }
+
+          } );
+        }
+        
+        belowEntryMetaClass( 'img.size-full' );
+        
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        
+        
+        
       }
     },
     // Home page
