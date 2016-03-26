@@ -1,19 +1,31 @@
 html {
     font-size: 16px;
 }
+p, blockquote, ul, ol, dl, table, h1, h2, h3, h4, h5, h6{
+    margin: 0 0 20px;
+}
 .main, .sidebar {
     padding-right: 15px;
     padding-left: 15px;
 }
+/*table {
+  @extend .table;
+}*/
 
 @media (min-width: $screen-sm-min) {
-    body {
-      font-size: 1.1rem;
-    }
+  body {
+    font-size: 1.1rem;
+  }
+  p, blockquote, ul, ol, dl, table, h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 28px;
+  }
 }
 @media (min-width: $screen-md-min) {
   body {
     font-size: 1.2rem;
+  }
+  p, blockquote, ul, ol, dl, table, h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
   }
   .main {
     margin-left: 16.66666667%;
@@ -21,13 +33,12 @@ html {
     width: 66.66666667%;
     margin-bottom: 80px;
   }
-  .sidebar-primary .main{
+  .full-width .main {
+    width: 100%;
     margin-left: 0;
   }
-  .sidebar{
-    float: left;
-    width: 33.33333332%;
-    margin-bottom: 80px;
+  .sidebar-primary .main{
+    margin-left: 0;
   }
 }
 @media (min-width: $screen-lg-min) {
